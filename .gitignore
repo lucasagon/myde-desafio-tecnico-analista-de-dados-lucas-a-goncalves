@@ -1,0 +1,33 @@
+# Credenciais e config local
+.env
+.env.local
+.env.*.local
+docs/.env
+
+# Memória e sessões de agentes (conforme diretrizes.md)
+projects_memory.md
+prompts_location.md
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# Power BI / dados locais
+*.pbix.bak
+powerbi/*.csv
+powerbi/data/
+
+# Artefatos temporários
+reef/pdf_extract.txt
+reef/schema_output.json
+reef/_schema_probe.py
+*.zip
+.DS_Store
+Thumbs.db
+
+# IDE
+.cursor/
+.vscode/

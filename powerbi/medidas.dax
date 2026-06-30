@@ -1,0 +1,54 @@
+# Medidas DAX — carteira_credito.pbix
+# Tabelas importadas via Native Query a partir de sql/views/
+
+-- Valor total emprestado
+Valor Total Emprestado = SUM(fact_loan[amount])
+
+-- Ticket médio
+Ticket Médio Empréstimo = AVERAGE(fact_loan[amount])
+
+-- Quantidade de empréstimos
+Qtd Empréstimos = COUNTROWS(fact_loan)
+
+-- Empréstimos maus (B/D)
+Qtd Empréstimos Maus = CALCULATE(
+    COUNTROWS(fact_loan),
+    fact_loan[status_grupo] = "mau"
+)
+
+-- Taxa de inadimplência (%)
+Taxa Inadimplência = DIVIDE(
+    [Qtd Empréstimos Maus],
+    [Qtd Empréstimos],
+    0
+)
+
+-- Contas ativas
+Qtd Contas = DISTINCTCOUNT(dim_account[account_id])
+
+-- Clientes ativos
+Qtd Clientes = DISTINCTCOUNT(dim_client[client_id])
+
+-- Cartões ativos
+Qtd Cartões = DISTINCTCOUNT(dim_card[card_id])
+
+-- Concessões no período (usa Calendário)
+Concessões no Período = CALCULATE(
+    [Qtd Empréstimos],
+    USERELATIONSHIP(Calendario[Date], fact_loan[loan_date])
+)
+
+-- Valor concedido no período
+Valor Concedido no Período = CALCULATE(
+    [Valor Total Emprestado],
+    USERELATIONSHIP(Calendario[Date], fact_loan[loan_date])
+)
+
+-- Inadimplência por região (via dim_district)
+Taxa Inadimplência Região = DIVIDE(
+    CALCULATE([Qtd Empréstimos Maus], dim_district),
+    CALCULATE([Qtd Empréstimos], dim_district),
+    0
+)
+
+-- Formatação sugerida: Taxa Inadimplência e Taxa Inadimplência Região → %

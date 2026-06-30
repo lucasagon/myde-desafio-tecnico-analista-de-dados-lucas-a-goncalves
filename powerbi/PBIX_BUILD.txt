@@ -1,0 +1,14 @@
+Para gerar powerbi/carteira_credito.pbix:
+
+1. python powerbi/export_views.py
+2. Abrir Power BI Desktop
+3. Obter dados > Texto/CSV > pasta powerbi/data/
+4. Renomear tabelas (vw_dim_district -> dim_district, etc.) — ver docs/POWERBI.md
+5. Desativar deteccao automatica de relacionamentos
+6. Criar relacionamentos FK conforme docs/POWERBI.md
+7. Nova tabela Calendario via DAX (ver docs/POWERBI.md)
+8. Importar medidas de powerbi/medidas.dax
+9. Criar 2 paginas de relatorio (KPIs + Risco por Regiao)
+10. Salvar como powerbi/carteira_credito.pbix
+
+CSVs ja validados contra SQL (taxa inadimplencia 11,14%).

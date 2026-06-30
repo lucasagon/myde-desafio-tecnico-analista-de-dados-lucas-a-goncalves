@@ -1,0 +1,9 @@
+sqlalchemy>=2.0
+pymysql>=1.1
+pandas>=2.0
+numpy>=1.26
+plotly>=5.18
+scikit-learn>=1.4
+python-dotenv>=1.0
+matplotlib>=3.8
+statsmodels>=0.14
