@@ -1,14 +1,14 @@
-Para gerar powerbi/carteira_credito.pbix:
+ENTREGA — desafio-analista-de-dados-myde-lucas-a-goncalves.pbix
+================================================================
 
-1. python powerbi/export_views.py
-2. Abrir Power BI Desktop
-3. Obter dados > Texto/CSV > pasta powerbi/data/
-4. Renomear tabelas (vw_dim_district -> dim_district, etc.) — ver docs/POWERBI.md
-5. Desativar deteccao automatica de relacionamentos
-6. Criar relacionamentos FK conforme docs/POWERBI.md
-7. Nova tabela Calendario via DAX (ver docs/POWERBI.md)
-8. Importar medidas de powerbi/medidas.dax
-9. Criar 2 paginas de relatorio (KPIs + Risco por Regiao)
-10. Salvar como powerbi/carteira_credito.pbix
+STATUS FINAL (30/06/2026)
+-------------------------
+[OK] Modelo ODBC MariaDB 3.2, 9 tabelas, dim_calendar, 12 medidas
+[OK] 3 paginas: Inicio + Visao Geral + Risco por Regiao
+[OK] Slicers status sincronizados: fact_loan + fact_agg_carteira
+[OK] Assets: powerbi/bgs/ (logo + fundos)
+[OK] .pbix ~21,7 MB (entrega) | .pbit ~2,5 MB (template)
 
-CSVs ja validados contra SQL (taxa inadimplencia 11,14%).
+Docs: docs/ENTREGA.md | Runbook: docs/RUNBOOK.md | Troubleshooting: docs/TROUBLESHOOTING.md
+Notion: https://app.notion.com/p/38f5aecd550381b4a587caa909fc7445
+Git: https://github.com/lucasagon/myde-desafio-tecnico-analista-de-dados-lucas-a-goncalves

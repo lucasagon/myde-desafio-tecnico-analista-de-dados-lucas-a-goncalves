@@ -1,5 +1,7 @@
 # Parte 3 — Python
 
+**Notion:** [Hub MYDE](https://app.notion.com/p/38f5aecd550381b4a587caa909fc7445) · **Runbook:** [`RUNBOOK.md`](RUNBOOK.md)
+
 Arquivo: `python/analise_risco.ipynb`
 
 ## Dependências

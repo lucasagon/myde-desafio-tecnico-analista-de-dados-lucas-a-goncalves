@@ -1,5 +1,5 @@
-# Medidas DAX — carteira_credito.pbix
-# Tabelas importadas via Native Query a partir de sql/views/
+# Medidas DAX — tabela _medidas em desafio-analista-de-dados-myde-lucas-a-goncalves.pbix
+# Tabelas via ODBC (MariaDB 3.2) | Calendário: dim_calendar
 
 -- Valor total emprestado
 Valor Total Emprestado = SUM(fact_loan[amount])
@@ -32,16 +32,16 @@ Qtd Clientes = DISTINCTCOUNT(dim_client[client_id])
 -- Cartões ativos
 Qtd Cartões = DISTINCTCOUNT(dim_card[card_id])
 
--- Concessões no período (usa Calendário)
-Concessões no Período = CALCULATE(
-    [Qtd Empréstimos],
-    USERELATIONSHIP(Calendario[Date], fact_loan[loan_date])
-)
+-- Concessões / valor no período — dim_calendar[Date] -> fact_loan[loan_date] já está ativo
+Concessões no Período = [Qtd Empréstimos]
 
--- Valor concedido no período
-Valor Concedido no Período = CALCULATE(
-    [Valor Total Emprestado],
-    USERELATIONSHIP(Calendario[Date], fact_loan[loan_date])
+Valor Concedido no Período = [Valor Total Emprestado]
+
+-- Transações por data (só se precisar — relação trans_date está inativa)
+Valor Transações no Período =
+CALCULATE(
+    SUM(fact_trans[amount]),
+    USERELATIONSHIP(dim_calendar[Date], fact_trans[trans_date])
 )
 
 -- Inadimplência por região (via dim_district)
@@ -51,4 +51,4 @@ Taxa Inadimplência Região = DIVIDE(
     0
 )
 
--- Formatação sugerida: Taxa Inadimplência e Taxa Inadimplência Região → %
+-- Formatação: Taxa Inadimplência e Taxa Inadimplência Região → %

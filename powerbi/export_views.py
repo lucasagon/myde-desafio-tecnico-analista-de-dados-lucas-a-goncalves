@@ -1,4 +1,8 @@
-"""Export star schema views to CSV for Power BI Import mode."""
+"""Export star schema views to CSV — FALLBACK only (offline / slow MariaDB).
+
+Primary path for Power BI: ODBC (MariaDB 3.2) with SQL from sql/views/*.sql — see docs/POWERBI.md
+See docs/POWERBI.md
+"""
 import os
 import glob
 import pandas as pd

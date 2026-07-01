@@ -4,34 +4,34 @@ overview: Inicializar o repositório do desafio técnico MYDE (Analista de Dados
 todos:
   - id: setup-repo
     content: "Incremento 1: Clonar/inicializar git, env.md, projects_memory.md, .cursor/rules, .gitignore, .env/.env.example, plano em docs/plans/"
-    status: pending
+    status: completed
   - id: notion-hub
-    content: "Incremento 1: Criar hub Notion com participante Lucas Almeida Gonçalves (27/06/1990) e subpáginas espelhando docs/"
-    status: pending
+    content: "Incremento 1: Criar hub Notion com participante Lucas Almeida Gonçalves (27.06.1990.') e subpáginas espelhando docs/"
+    status: completed
   - id: validate-db
     content: "Incremento 2: Mapear schema real das 8 tabelas e gerar docs/SCHEMA.md (bloqueante)"
-    status: pending
+    status: completed
   - id: notion-sync
     content: "Contínuo: Sincronizar cada incremento no Notion (reflexo dos .md locais)"
-    status: pending
+    status: completed
   - id: sql-queries
     content: "Incremento 3: Implementar 9 consultas analíticas em sql/consultas.sql"
-    status: pending
+    status: completed
   - id: sql-views
     content: "Incremento 3: Criar views SQL star schema em sql/views/dim/ e sql/views/fact/"
-    status: pending
+    status: completed
   - id: pbi-model
     content: "Incremento 4: Power BI — importar views star, relacionar por FKs, calendário e medidas DAX"
-    status: pending
+    status: completed
   - id: pbi-viz
     content: "Incremento 5: Power BI — 2 páginas de visualizações, KPIs e segmentadores"
-    status: pending
+    status: completed
   - id: python-full
     content: "Incremento 6: Notebook Python — EDA, análise de risco, 3+ gráficos Plotly e modelo ML"
-    status: pending
+    status: completed
   - id: insights-final
     content: "Incremento 7: INSIGHTS.md, README.md final, sync Notion, projects_memory.md, commit/push"
-    status: pending
+    status: completed
 isProject: false
 ---
 
@@ -169,7 +169,7 @@ myde-desafio-tecnico-analista-de-dados-lucas-a-goncalves/
 
 ```
 📁 MYDE — Desafio Técnico Analista de Dados
-├── 👤 Participante: Lucas Almeida Gonçalves — Nascimento: 27/06/1990
+├── 👤 Participante: Lucas Almeida Gonçalves — Nascimento: 27.06.1990.'
 ├── 📄 Visão Geral / README
 ├── 📄 Plano de Execução
 ├── 📄 Dicionário de Dados (SCHEMA)
@@ -366,7 +366,7 @@ O Notion será a **documentação viva e navegável** do projeto, mantida em sin
 
 - **Participante do desafio** (obrigatório, visível no topo da página raiz):
   - Nome: **Lucas Almeida Gonçalves**
-  - Nascimento: **27/06/1990**
+  - Nascimento: **27.06.1990.'**
 - Links para todas as subpáginas
 - Status de cada incremento
 - Link para o repositório GitHub
@@ -591,22 +591,21 @@ O README é montado **por último**, quando todas as partes estão concluídas, 
 5. **Como reproduzir cada parte** — SQL, Power BI, Python (comandos e passos)
 6. **Link para documentação Notion** — hub do projeto com documentação expandida
 7. **Link para o dataset** — [relational.fel.cvut.cz/dataset/Financial](https://relational.fel.cvut.cz/dataset/Financial)
-8. **Autor e repositório** — Lucas Almeida Gonçalves (Nascimento: 27/06/1990), link GitHub
+8. **Autor e repositório** — Lucas Almeida Gonçalves (Nascimento: 27.06.1990.'), link GitHub
 
 → **Sincronizar no Notion** (página "Visão Geral / README").
 
-**Checklist final de entrega (do PDF + extras):**
+**Checklist final de entrega (concluído):**
 
-- [ ] `sql/consultas.sql` + `sql/views/dim/` + `sql/views/fact/` (star schema SQL)
-- [ ] `powerbi/carteira_credito.pbix`
-- [ ] `docs/INSIGHTS.md`
-- [ ] `python/analise_risco.ipynb` (bônus)
-- [ ] `docs/SQL.md`, `docs/POWERBI.md`, `docs/PYTHON.md` (documentação técnica)
-- [ ] `README.md` — visão geral, setup, reprodução, links Notion
-- [ ] `.env.example` versionado; `.env` fora do git
-- [ ] Hub Notion com participante (Lucas Almeida Gonçalves, 27/06/1990) e sync com todos os `.md`
-- [ ] Commit + push para `main`
-- [ ] (Opcional) `.zip` para envio por e-mail
+- [x] `sql/consultas.sql` + `sql/views/dim/` + `sql/views/fact/` (star schema SQL)
+- [x] `powerbi/desafio-analista-de-dados-myde-lucas-a-goncalves.pbix`
+- [x] `docs/INSIGHTS.md`
+- [x] `python/analise_risco.ipynb` (bônus)
+- [x] `docs/SQL.md`, `docs/POWERBI.md`, `docs/PYTHON.md` (documentação técnica)
+- [x] `README.md` — visão geral, setup, reprodução, links Notion
+- [x] `.env.example` versionado; `.env` fora do git
+- [x] Hub Notion com participante (Lucas Almeida Gonçalves, 27.06.1990.')
+- [x] Entrega via repositório Git (link no README)
 
 Atualizar `[projects_memory.md](projects_memory.md)` com estado final consolidado (incluindo URL do hub Notion).
 

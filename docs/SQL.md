@@ -1,5 +1,7 @@
 # Parte 1 — SQL
 
+**Notion:** [Hub MYDE](https://app.notion.com/p/38f5aecd550381b4a587caa909fc7445) · **Runbook:** [`RUNBOOK.md`](RUNBOOK.md)
+
 ## Consultas analíticas (`sql/consultas.sql`)
 
 | # | Questão | Resultado-chave (validado) |
@@ -33,7 +35,7 @@
 | `vw_fact_loan` | empréstimo | 682 | account_id, district_id, loan_date |
 | `vw_fact_trans` | transação | 1.056.320 | account_id, trans_date |
 | `vw_fact_card_account` | conta | 4.500 | account_id, card_id (nullable) |
-| `vw_fact_agg_carteira` | região×mês×status×faixa | 648 | district_id, periodo_mes |
+| `vw_fact_agg_carteira` | região×mês×status×faixa | 648 | district_id, periodo_mes, status |
 
 ### Colunas derivadas no SQL
 

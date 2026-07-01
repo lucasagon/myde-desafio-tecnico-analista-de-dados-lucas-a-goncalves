@@ -1,5 +1,6 @@
 # Dicionário de Dados — financial (Berka / PKDD'99)
 
+> **Notion:** [Hub MYDE](https://app.notion.com/p/38f5aecd550381b4a587caa909fc7445)  
 > Versão hospedada: **Financial (Jan Motl)** — `relational.fel.cvut.cz`  
 > Gerado em: 2026-06-30  
 > Total de linhas: ~1.090.086
