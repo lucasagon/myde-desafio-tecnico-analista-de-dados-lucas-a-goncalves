@@ -83,7 +83,7 @@ cd python && jupyter notebook analise_risco.ipynb
 |---|---|
 | SQL | `sql/consultas.sql` + `sql/views/` |
 | Power BI | `powerbi/desafio-analista-de-dados-myde-lucas-a-goncalves.pbix` |
-| Insights | `docs/INSIGHTS.md` |
+| Insights | `docs/INSIGHTS.md` — **análise estratégica + recomendações acionáveis** |
 | Python (bônus) | `python/analise_risco.ipynb` |
 | Checklist final | `docs/ENTREGA.md` |
 
@@ -96,7 +96,7 @@ cd python && jupyter notebook analise_risco.ipynb
 | [`docs/SQL.md`](docs/SQL.md) | Consultas e star schema |
 | [`docs/POWERBI.md`](docs/POWERBI.md) | Modelo, DAX, visuais |
 | [`docs/PYTHON.md`](docs/PYTHON.md) | Notebook e ML |
-| [`docs/INSIGHTS.md`](docs/INSIGHTS.md) | Achados para crédito |
+| [`docs/INSIGHTS.md`](docs/INSIGHTS.md) | Análise estratégica de negócio e recomendações acionáveis |
 | [`docs/RUNBOOK.md`](docs/RUNBOOK.md) | Runbook de testes |
 | [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md) | ODBC, filtros, taxa |
 | [`docs/TRANSPARENCIA_IA.md`](docs/TRANSPARENCIA_IA.md) | Uso de IA (Cursor) |

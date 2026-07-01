@@ -37,7 +37,7 @@
 |---|---|---|
 | Script `.sql` | `sql/consultas.sql` + `sql/views/` | OK |
 | Power BI `.pbix` | `powerbi/desafio-analista-de-dados-myde-lucas-a-goncalves.pbix` | OK |
-| Insights | `docs/INSIGHTS.md` | OK |
+| Insights | `docs/INSIGHTS.md` | OK — análise estratégica + recomendações acionáveis |
 | Python (bônus) | `python/analise_risco.ipynb` | OK |
 | Transparência IA | `docs/TRANSPARENCIA_IA.md` | OK |
 
